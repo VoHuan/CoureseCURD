@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.4.0",
+    "mongoose-delete": "^1.0.2",
+    "mongoose-slug-updater": "^3.3.0"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "morgan": "^1.10.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.1"
+  }
+}
